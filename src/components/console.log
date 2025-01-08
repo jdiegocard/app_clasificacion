@@ -1,0 +1,16 @@
+useEffect(() => {
+    const fetchData = async () => {
+        try {
+            console.log('lawanda al endpoint:', endpoint); // Verifica el endpoint
+            const response = await api.get(endpoint);
+            setData(response.data);
+        } catch (err) {
+            console.error('Error en Axios:', err);
+            setError(err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    fetchData();
+}, [endpoint]);

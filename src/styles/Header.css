@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  flex-direction: column ;  
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;  
+}
+
+.header-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.header-content h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
